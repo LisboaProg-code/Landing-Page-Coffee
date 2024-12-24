@@ -128,6 +128,7 @@ header{
     height: 100%;
     width: 100%;
     position: relative;
+    gap: 50px;
 }
 
 .conteiner_texto h1, .conteiner_texto p, .conteiner_texto .button_read_more{
@@ -136,15 +137,21 @@ header{
 
 .conteiner_texto h1{
     position: absolute;
-    top: 25%;
+    width: 60vw;
+    top: 8%;
     transform: translateX(-10vw);
+    font-size: 3rem;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
 }
 
 .conteiner_texto p{
+    width: 280px;
+    text-align: justify;
     position: absolute;
-    top: 30%;
+    top: 25%;
     transform: translateX(-10vw);
-
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
+    font-size: 1.2rem;
 }
 
 .conteiner_texto .button_read_more{
@@ -155,16 +162,16 @@ header{
     align-content: center;
     text-align: center;
     position: absolute;
-    top: 34%;
+    top: 38%;
     transform: translateX(-10vw);
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
 .conteiner_texto .button_read_more:hover{
-    background-color: #7d5644;
+    background-color: #6e4c3c;
     color: #c39478;
-    transition: background-color .3s ease, color .3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .conteiner_texto .conteiner_buttons{
@@ -202,7 +209,11 @@ header{
     position: relative;
 }
 
-.circle_bottom, .circle_top, .circle_middle, .circle_middle_bottom{
+
+#circle_bottom, 
+#circle_top, 
+#circle_middle, 
+#circle_middle_bottom{
     width: 15px;
     height: 15px;
     border-radius: 50%;
@@ -211,20 +222,27 @@ header{
     top: 65%;
 }
 
-.circle_bottom{
+
+#circle_bottom{
     left: 60%;
 }
 
-.circle_middle_bottom{
-    left: 46%;
-}
 
-.circle_middle{
+#circle_middle_bottom{
     left: 53%;
 }
 
-.circle_top{
+
+#circle_middle{
+    left: 46%; /* 46 */
+}
+
+
+#circle_top{
     left: 39%;
+}
+
+.circle.active {
     background-color: #845f4f;
 }
 
