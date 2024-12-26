@@ -33,6 +33,8 @@ const bolinhas = [
     document.getElementById('circle_bottom')          // 4ª bolinha
 ];
 
+
+
 let indice = 0; // Índice inicial
 
 // Atualiza a imagem de fundo e ativa a bolinha correspondente
@@ -67,3 +69,46 @@ document.getElementById('anterior').addEventListener('click', anterior);
 
 // Inicializa com a primeira imagem
 atualizarImagem();
+/* -------------------------- */
+
+let perfil = document.getElementById('foto')
+let nome = document.getElementById('nomeperfil')
+
+const feedback = [
+    'imgs/homem1.jpg',
+    'imgs/homem2.jpg',
+    'imgs/homem3.jpg',
+    'imgs/homem4.jpg'
+]
+
+const nomes = [
+    'Dennis Wilson',
+    'Roy Linderson',
+    'Tommy Sakura',
+    'Mike Tyson'
+]
+
+function atualizarImagemFeedback(){
+    perfil.style.backgroundImage = `url(${feedback[indice]})`;
+    perfil.style.backgroundSize = 'cover';
+    perfil.style.backgroundPosition = 'center';
+
+    nome.innerText = nomes[indice]
+    
+}
+
+function next() {
+    indice = (indice + 1) % feedback.length; // Avança na ordem
+    atualizarImagemFeedback();
+}
+
+function previous(){
+    indice = (indice - 1) % feedback.length
+    atualizarImagemFeedback()
+}
+
+
+document.getElementById('right').addEventListener('click', next);
+document.getElementById('left').addEventListener('click', previous);
+
+atualizarImagemFeedback()

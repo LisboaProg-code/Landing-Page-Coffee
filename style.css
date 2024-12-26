@@ -261,7 +261,7 @@ header{
 
 .sobre{
     background-color: white;
-    height: 1900px;
+    height: 100%;
     width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -312,7 +312,7 @@ header{
 
 #img1, #img2, #img3{
     width: 85vw;
-    height: 520px;
+    height: 100vh;
     border-radius: 15px;
     background-size: cover;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
@@ -522,7 +522,7 @@ header{
 .img_gallery{
     background-color: #002250;
     width: 80vw;
-    height: 520px;
+    height: 100vh;
     border-radius: 15px;
 }
 
@@ -570,3 +570,85 @@ header{
 
 /* Feedback */
 
+.feedback{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    color: #584036;
+    padding: 20px 0px;
+    gap: 20px;
+}
+
+.feedback .feedback_txt h1{
+    font-size: .9rem;
+    text-align: center;
+}
+
+.feedback .feedback_txt h2{
+    font-size: 1.7rem;
+    text-align: center;
+    color: #002250;
+}
+
+.perfil_feedback{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0px;
+    gap: 20px;
+}
+
+.perfil_feedback .foto_perfil_feedback{
+    background-image: url(imgs/homem1.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+.conteiner_feedback_resposta_perfil{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    text-align: justify;
+}
+
+.nome_perfil_feedback{
+    font-size: 1.2rem;   
+}
+
+.conteiner_redes_sociais_feedback{
+    font-size: 1.6rem;
+    display: flex;
+    gap: 20px;
+}
+
+.ri-facebook-fill:hover, .ri-instagram-line:hover, .ri-twitter-fill:hover{
+    color: #9e6d57;
+    transition: color .4s ease;
+}
+
+.feedback .conteiner_buttons{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(-200%);
+    font-size: 1.7rem;
+    text-shadow: none;
+}
+
+.feedback .button_previous:hover, .feedback .button_next:hover{
+    color: #c39478;
+    transition: color .4s ease;
+}
