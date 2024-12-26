@@ -52,7 +52,7 @@ header{
 /* menu */
 
 .menu{
-    width: 60%;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-self: center;
@@ -136,11 +136,15 @@ header{
     grid-column: 2;
 }
 
+.conteiner_apresentaçao_texto{
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
 .conteiner_texto h1{
     position: absolute;
-    width: 60vw;
-    top: 8%;
-    transform: translateX(-10vw);
+    top: 13%;
     font-size: 3rem;
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
 }
@@ -150,21 +154,26 @@ header{
     text-align: justify;
     position: absolute;
     top: 25%;
-    transform: translateX(-10vw);
     text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.4);
     font-size: 1.2rem;
+}
+
+.conteiner_button_read_more_apresentacao{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-start;
+    align-items: flex-end;
+    transform: translateX(-30%);
 }
 
 .conteiner_texto .button_read_more{
     background-color: #9e6d57;
     color: #584036;
-    width: 30%;
-    height: 7%;
+    width: 50vw;
+    height: 10%;
     align-content: center;
     text-align: center;
-    position: absolute;
-    top: 38%;
-    transform: translateX(-10vw);
     border-radius: 15px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
@@ -179,7 +188,7 @@ header{
     grid-column: 1;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     width: 100%;
     font-size: 35px;
 }
@@ -207,7 +216,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
+    gap: 20px;
 }
 
 
@@ -219,8 +228,7 @@ header{
     height: 15px;
     border-radius: 50%;
     border: 1px solid #845f4f;
-    position: absolute;
-    top: 65%;
+
 }
 
 
@@ -303,7 +311,7 @@ header{
 }
 
 #img1, #img2, #img3{
-    width: 400px;
+    width: 85vw;
     height: 520px;
     border-radius: 15px;
     background-size: cover;
@@ -323,7 +331,7 @@ header{
 }
 
 #img1:hover, #img2:hover, #img3:hover{
-    transform: translateX(20px);
+    transform: translateX(1.5%);
     transition: transform .7s ease;
 }
 
@@ -356,8 +364,8 @@ header{
 }
 
 .our_products .conteiner_our_products{
-    width: 400px;
-    height: 520px;
+    width: 65vw;
+    height: 420px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     display: flex;
@@ -422,12 +430,11 @@ header{
 
 .conteiner_txt_informations h1{
     padding: 20px 10px;
-    text-align: center;
 }
 
 .conteiner_txt_informations p{
     padding: 10px;
-    width: 80%;
+    width: 85%;
 }
 
 .conteiner_more_informations .conteiner_txt_informations p{
@@ -466,7 +473,7 @@ header{
 }
 
 .more1:hover, .more2:hover, .more3:hover, .more4:hover{
-    transform: translate(15px, -5%);
+    transform: translate(2%, -5%);
     transition: transform .7s ease;
 }
 
@@ -495,6 +502,8 @@ header{
     align-items: center;
     flex-flow: column nowrap;
     gap: 20px;
+    width: 100%;
+    height: 100%;
 }
 
 .gallery h1{
@@ -512,7 +521,7 @@ header{
 
 .img_gallery{
     background-color: #002250;
-    width: 400px;
+    width: 80vw;
     height: 520px;
     border-radius: 15px;
 }
@@ -524,7 +533,7 @@ header{
 }
 
 #g1:hover, #g2:hover, #g3:hover, #g4:hover, #g5:hover, #g6:hover, #g7:hover, #g8:hover{
-    transform: translateX(10px);
+    transform: translateX(1.5%);
     transition: transform .4s ease;
 }
 

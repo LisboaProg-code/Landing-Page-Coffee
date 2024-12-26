@@ -1,18 +1,26 @@
-Coffee shop is the place where you can get flavorful coffee strains from global elite brands roasters at very affordable price.
+configs de responsibilidade que tenho que fazer
 
-|img1|
+|HEADER|
 
-Elite Coffee Brands
+nav menu: aumentar o conteiner pra 100vw ou 100% ✅ 
 
+|APRESENTAÇÃO|
 
-|img2|
+h1, p: colocar tamanho em rem ✅
 
-Hot and tasty coffee
+bottao: colocar pra vw ou % ✅
 
-|img3|
+ajeitar a centralização e alinhamento do h1 e p (acho q colocando os dois dentro de uma div e ajeitar o display flex e um gap já deve funcionar)✅
 
-Dedicated coffee fans
+|Sobre & gallery|
 
-|img4|
+imagens: ajeitar o width para 90vw ou 90% ou até menos, e dependendo de como ficar o tamanho ajeitar o quanto ela se move pra direita com hover
 
-Celebrate coffee brands
+|Products|
+
+conteiner imagens: ajeitar o width pra 90vw ou 90% ou menos
+h1 e p: ajeitar o tamanho com rem
+
+|SERVICES|
+
+aumentar o width dos paragrafos
