@@ -69,6 +69,8 @@ document.getElementById('anterior').addEventListener('click', anterior);
 
 // Inicializa com a primeira imagem
 atualizarImagem();
+
+
 /* -------------------------- */
 
 let perfil = document.getElementById('foto')
@@ -103,8 +105,8 @@ function next() {
 }
 
 function previous(){
-    indice = (indice - 1) % feedback.length
-    atualizarImagemFeedback()
+    indice = (indice - 1 + feedback.length) % feedback.length; // Retrocede na ordem
+    atualizarImagemFeedback();
 }
 
 
