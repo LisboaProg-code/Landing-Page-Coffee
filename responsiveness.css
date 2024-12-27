@@ -28,7 +28,6 @@
     .menu{
         grid-column: 1;
         grid-row: 2;
-        width: 65vw;
         display: flex;
         justify-content: flex-start;
         align-items: center;
