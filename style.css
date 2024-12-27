@@ -13,7 +13,7 @@
 
 body{
     color: #F2E3D8;
-    background-color: red;
+    background-color: white;
     overflow-x: hidden;
     overflow-y: auto;
     width: 100%;
@@ -129,6 +129,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height: 800px;
+    width: 100%;
 }
 
 .conteiner_texto{
@@ -205,7 +206,7 @@ header{
 
 .button_next{
     position: absolute;
-    left: 92%;
+    left: 90%;
     transform: translateY(-300%);
     text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
