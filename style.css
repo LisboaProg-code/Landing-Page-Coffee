@@ -429,6 +429,7 @@ header{
 #p1, #p2, #p3{
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 }
 
 #p1{

@@ -8,6 +8,10 @@
     .conteiner_button_read_more_apresentacao{
         transform: translate(-30%, 10px);
     }
+
+    .apresentação .conteiner_marca_pag{
+        transform: translate(-60px, -90px);
+    }
 }
 
 /* max 768px */
