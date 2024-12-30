@@ -132,3 +132,5 @@ const btnTopo = document.getElementById('top');
     btnTopo.onclick = function() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     };
+
+/* --botao-- */

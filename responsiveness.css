@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@media screen and (max-width: 456px) {
+    .conteiner_texto p{
+        top: 35vh;   
+    }
+
+    .conteiner_button_read_more_apresentacao{
+        transform: translate(-30%, 10px);
+    }
+}
+
 /* max 768px */
 
 @media screen and (max-width: 768px) {
