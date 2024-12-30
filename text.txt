@@ -1,28 +1,3 @@
-configs de responsibilidade que tenho que fazer
+terminar a pagina principal fznd a responsibilidade para telas maiores q 768px
 
-|HEADER|
-
-nav menu: aumentar o conteiner pra 100vw ou 100% (dnv)
-
-|APRESENTAÇÃO|
-
-h1, p: dar um padding ou gap dos nos dois
-
-bottao: colocar pra vw ou % ✅
-
-|Sobre|
-
-imagens: aumentar um pouquinho a imagem (maximo 90vw)
-aumentar o tamanho do conteiner sobre pra 100%
-
-|Products|
-
-conteiner imagens: aumentar um poquinho o width
-
-|TESTIMONIALS|
-
-ajeitar o botao de voltar (previous)
-
-|GERAL|
-
-descobrir oq tá fazendo aparecer a barra de rolagem lateral (usar o inspecionar) (se pá é a barra de rolagem)
+se eu conseguir terminar amanha, algo q eu acho dificil, já posso fazer a parte do darkmode e lightmode (ou posso tira essa função já que o google sobressai na parte de tema escuro ou claro. Mas posso tentar fazer um programa que puxe o tema padrão do cliente, e deixa no site e dependendo vai aparecer o darkmode ou ligthmode pra mudar)
