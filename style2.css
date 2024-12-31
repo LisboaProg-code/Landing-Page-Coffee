@@ -1,21 +1,45 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header{
+body{
+    color: #F2E3D8;
+    background-color: white;
+    overflow-y: auto;
     width: 100%;
-    height: 100%;
-    padding: 20px;
-    background-image: url(imgs/Cafe-grao.jpg);
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 2;
-    position: relative;
+    transition: all .5s ease;
 }
+
+body::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+} 
+
+/* Header */
+
+header{
+    background-image: url(imgs/cafe17-pequeno.jpg);
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    height: 15vh;
+    background-color: transparent;
+    font-size: 1rem;
+    gap: 20px;
+}
+
+/* img */
 
 .conteiner_logo_pag2{
     width: 15%;
@@ -33,36 +57,148 @@ header{
     width: 100%;
 }
 
+/* --img-- */
+
+/* menu */
+
 .menu_pag2{
-    grid-column: 1;
-    grid-row: 2;
+    width: 87vw;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-left: 15px;
+    justify-content: center;
+    align-self: center;
+    gap: 20px;
+    font-size: 1.1rem;
 }
 
-.conteiner_search_button_dark_header_pag2{
-    grid-column: 3;
-    grid-row: 1;
-    position: absolute;
-    top: 45%;
-    left: 0%;
-    transform: translate(-100%, -100%);
+.menu_items_pag2{
+    text-decoration: none;
+    color: #F2E3D8;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.menu_items_pag2:hover{
+    color: #A67F67;
+    transition: color .3s ease;
+}
+
+/* --menu-- */
+
+.contiener_text_pag2_header{
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-55vw);
+    text-align: center;
+    color: #584036;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* search, button and darkmode */
+
+.conteiner_search_button_dark_header_pag2{
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+    gap: 10px;
+    color: #8D614D;
 }
 
 .conteiner_search_button_dark_header_pag2 .button_buy{
-    width: 150px;
+    color: #2e211c;
+    width: 15vw;
+    height: 30px;
+    background-color: #9e6d57;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.conteiner_search_button_dark_header_pag2 .button_buy:hover{
+    background-color: #513b32;
+    color: #c39478;
+    transition: background-color .5s ease, color .3s ease;
+}
+
+
+.conteiner_search_button_dark_header_pag2 .ri-moon-line, .conteiner_search_button_dark_header_pag2 .ri-search-line{
+    text-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+    color: #F2E3D8;
+    cursor: pointer;
+}
+
+.ri-moon-line:hover, .ri-search-line:hover{
+    color: #c39478;
+    transition: color .5s ease;
+}
+
+/* --header-- */
+
+/* about */
+
+.about_pag2{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    color: #2e211c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.about_pag2 .conteiner_texto_about_pag2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+.about_pag2 .conteiner_texto_about_pag2 h1{
+    font-size: .9rem;
+}
+
+.about_pag2 .conteiner_texto_about_pag2 h2{
+    font-size: 1.8rem;
+    color: #002250;
+}
+
+.about_pag2 .conteiner_texto_about_pag2 p{
+    text-align: justify;
+    width: 80vw;
+}
+
+.imagem_coffee_about_pag2{
+    width: 70%;
+    height: 150px;
+    background-image: url(imgs/cafe16-pequeno.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.about_pag2 .conteiner_about_pag2_button_learn_more{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
     height: 40px;
+    background-color: #9e6d57;
+    border-radius: 15px;
+    color: #2e211c;
 }
 
-.conteiner_search_button_dark_header_pag2 .button_buy p{
-    transform: translateY(50%);
+.about_pag2 .conteiner_about_pag2_button_learn_more:hover{
+    background-color: #513b32;
+    color: #c39478;
+    transition: all .5s ease;
 }
 
-.conteiner_search_button_dark_header_pag2 .ri-search-line, .conteiner_search_button_dark_header_pag2 .ri-moon-line{
-    font-size: 25px;
-}
