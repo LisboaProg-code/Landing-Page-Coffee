@@ -29,7 +29,9 @@ body::-webkit-scrollbar{
 header{
     background-image: url(imgs/cafe17-pequeno.jpg);
     background-size: cover;
+    background-position: center 60%;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-self: center;
@@ -87,13 +89,22 @@ header{
 
 /* --menu-- */
 
+.centralizacao_txt_header{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1;
+    transform: translate(0%, -5%);
+}
+
 .contiener_text_pag2_header{
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     height: 100%;
-    transform: translateX(-55vw);
     text-align: center;
     color: #584036;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
