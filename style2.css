@@ -202,3 +202,48 @@ header{
     transition: all .5s ease;
 }
 
+/* --about-- */
+
+/* about2 */
+
+.about2_pag2{
+    background-color: #f2f2f2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 20px;
+}
+
+.conteiner_about2_pag2{
+    background-color: white;
+    color: #2e211c;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.conteiner_about2_pag2 .img_about2_pag2{
+    width: 100%;
+    height: 25vh;
+    background-image: url(imgs/cafe18-pequeno.jpg);
+    background-size: cover;
+}
+
+.conteiner_about2_pag2 h1{
+    color: #002250;
+    font-size: 1.3rem;
+    padding: 0px 20px 0px 20px;
+    
+}
+
+.conteiner_about2_pag2 p{
+    padding: 0px 20px 20px 20px;    
+}
