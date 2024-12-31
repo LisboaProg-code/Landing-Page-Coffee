@@ -247,3 +247,44 @@ header{
 .conteiner_about2_pag2 p{
     padding: 0px 20px 20px 20px;    
 }
+
+/* -about2-- */
+
+/* about3 */
+
+.about3_pag2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    color: #2e211c;
+    gap: 30px;
+    padding: 30px;
+}
+
+.about3_pag2 .more_informations_pag2_about3{
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    gap: 10px;
+}
+
+
+
+.about3_pag2 .more_informations_pag2_about3 h1{
+    align-self: center;
+    font-size: 2rem;
+}
+
+.about3_pag2 .more_informations_pag2_about3 h2{
+    color: #002250;
+    font-size: 1.6rem;
+}
+
+.about3_pag2 .more_informations_pag2_about3 p{
+    text-align: justify;
+}
