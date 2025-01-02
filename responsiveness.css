@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 456px) {
+@media screen and (max-width: 490px) {
     .conteiner_texto p{
         top: 35vh;   
     }
@@ -11,6 +11,20 @@
 
     .apresentação .conteiner_marca_pag{
         transform: translate(-60px, -90px);
+    }
+}
+
+@media screen and (min-width: 491px) and (max-width:559px) {
+    .conteiner_texto p{
+        top: 31vh;   
+    }
+
+    .conteiner_button_read_more_apresentacao{
+        transform: translate(-30%, 20px);
+    }
+
+    .apresentação .conteiner_marca_pag{
+        transform: translate(5px, -90px);
     }
 }
 
