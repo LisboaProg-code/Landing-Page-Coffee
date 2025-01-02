@@ -77,10 +77,10 @@ let perfil = document.getElementById('foto')
 let nome = document.getElementById('nomeperfil')
 
 const feedback = [
-    'imgs/homem1.jpg',
-    'imgs/homem2.jpg',
-    'imgs/homem3.jpg',
-    'imgs/homem4.jpg'
+    'imgs/homem1-pq.jpg',
+    'imgs/homem2-pq.jpg',
+    'imgs/homem3-pq.jpg',
+    'imgs/homem4-pq.jpg'
 ]
 
 const nomes = [

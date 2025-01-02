@@ -85,6 +85,196 @@
     /* --search, button and darkmode-- */
 
     /* --header-- */
+}
+
+@media screen and (min-width: 550px) and (max-width: 768px) {
+    /* about1 */
+
+    .about_pag2{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .about_pag2 .contiener_grid_about_pag2{
+        width: 100vw;
+        transform: translateX(1%);
+    }
+
+    .about_pag2 .conteiner_texto_about_pag2{
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .about_pag2 .conteiner_texto_about_pag2 p{
+        width: 100%;
+    }
+
+    .about_pag2 .imagem_coffee_about_pag2{
+        grid-column: 2;
+        width: 30vw;
+        height: 100%;
+        background-position: 60% center;
+    }
+
+    .about_pag2 .conteiner_about_pag2_button_learn_more{
+        width: 70%;
+    }
+
+    /* --about1-- */
+
+    /* about2 */
+
+    .about2_pag2{
+        height: 100%;
+    }
+
+    .conteiner_about2_pag2{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 90vw;
+        height: 100%;
+    }
+
+    .conteiner_about2_pag2 .img_about2_pag2{
+        height: 100%;
+        background-position: center;
+    }
+
+    .conteiner_about2_pag2 .conteiner_txt_grid_about2{
+        padding: 20px 0px 0px 0px;
+        display: flex;
+        flex-flow: column nowrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .conteiner_about2_pag2 .conteiner_txt_grid_about2 h1{
+        font-size: 1.5rem;
+    }
+
+    .conteiner_about2_pag2 .conteiner_txt_grid_about2 p{
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: justify;
+    }
+
+    .about2_pag2 .conteiner_button_discover_more .button_discover_more p{
+        text-align: center;
+    }
+
+    /* --about2-- */
+
+    /* about3 */
+
+    .about3_pag2{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+    
+    .about3_pag2 .more_informations_pag2_about3{
+        width: 100%;
+    }
+
+    .about3_pag2 .more_informations_pag2_about3 h2{
+        font-size: 1.4rem;
+    }
+
+    /* --about3-- */
+
+    /* about4 */
+
+    .about4_pag2{
+        height: 70vh;
+    }
+
+    .about4_pag2 .text_about4_pag2 h1{
+        font-size: 1rem;
+        color: #584036;
+    }
+
+    .about4_pag2 .text_about4_pag2 h2{
+        width: 70%;
+    }
+
+    .about4_pag2 .text_about4_pag2 p{
+        width: 50%;
+    }
+
+    /* --about4-- */
+
+    /* team members */
+
+    .group_about_pag2 .conteiner_members{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .group_about_pag2 .conteiner_member1,
+    .group_about_pag2 .conteiner_member2,
+    .group_about_pag2 .conteiner_member3,
+    .group_about_pag2 .conteiner_member4{
+        width: 100%;
+    }
+
+    .group_about_pag2 .conteiner_member1 .picture_member1,
+    .group_about_pag2 .conteiner_member2 .picture_member2,
+    .group_about_pag2 .conteiner_member3 .picture_member3,
+    .group_about_pag2 .conteiner_member4 .picture_member4{
+        color: #856354;
+    }
 
 }
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    header{
+        height: 35vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .conteiner_logo_pag2{
+        width: 80px;
+        font-size: 1.5rem;
+        align-self: flex-start;
+    }
+
+    .menu_pag2{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 30px;
+        transform: translateX(-15%);
+        font-size: 1rem;
+        padding: 20px 0px 0px 0px;
+    }
+
+    header .centralizacao_txt_header{
+        width: 100%;
+        
+    }
+
+    .conteiner_search_button_dark_header_pag2{
+        gap: 20px;
+        align-self: flex-start;
+        padding: 20px 0px 0px 0px;
+    }
+
+    .conteiner_search_button_dark_header_pag2 .button_buy{
+        width: 17vw;
+        height: 40px;
+        align-content: center;
+    }
+
+    .conteiner_search_button_dark_header_pag2 .ri-moon-line, .conteiner_search_button_dark_header_pag2 .ri-search-line{
+        transform: translateY(20%);
+        font-size: 1.3rem;
+    }
+}

@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="logo-fav/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style2.css">
     <link rel="stylesheet" href="responsiveness2.css">
+    <script src="script2.js" defer></script>
 </head>
 <body>
     <header>
@@ -24,7 +25,7 @@
         </div>
 
         <nav class="menu_pag2">
-            <a href="#" class="menu_items_pag2">Home</a>
+            <a href="index.html" class="menu_items_pag2">Home</a>
             <a href="#" class="menu_items_pag2" id="atual">About</a>
             <a href="#" class="menu_items_pag2">Our Coffes</a>
             <a href="#" class="menu_items_pag2">Contact</a>
@@ -42,6 +43,8 @@
         </div>
 
     </header>
+
+    <div class="button_the_top" id="top"><i class="ri-arrow-up-s-line"></i></div>
 
     <article class="about_pag2">
         
@@ -68,8 +71,15 @@
         <div class="conteiner_about2_pag2">
 
             <div class="img_about2_pag2"></div>
-            <h1>We provide a variety of services both to our new and regular customers</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro enim ipsum quam! Repudiandae aut nam, veniam harum corporis necessitatibus accusamus! Rem cumque maiores sequi dolor ipsum saepe deserunt molestias non.</p>
+            <div class="conteiner_txt_grid_about2">
+                <h1>We provide a variety of services both to our new and regular customers</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro enim ipsum quam! Repudiandae aut nam, veniam harum corporis necessitatibus accusamus! Rem cumque maiores sequi dolor ipsum saepe deserunt molestias non.</p>
+                <div class="conteiner_button_discover_more">
+                    <div class="button_discover_more">
+                        <p>Discover More</p>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -128,7 +138,14 @@
 
             <div class="conteiner_member1">
 
-                <div class="picture_member1"></div>
+                <div class="picture_member1" onmouseover="hover()" onmouseout="exit()">
+                    <div class="conteiner_icons_members" id="c1">
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-x-line"></i>
+                        <i class="ri-dribbble-line"></i>
+                        <i class="ri-mail-line"></i>
+                    </div>
+                </div>
                 <h1>Alex Lois</h1>
                 <h2>Barista at coffeebean</h2>
 
@@ -136,7 +153,14 @@
 
             <div class="conteiner_member2">
 
-                <div class="picture_member2"></div>
+                <div class="picture_member2" onmouseover="hover2()" onmouseout="exit2()">
+                    <div class="conteiner_icons_members" id="c2">
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-x-line"></i>
+                        <i class="ri-dribbble-line"></i>
+                        <i class="ri-mail-line"></i>
+                    </div>
+                </div>
                 <h1>Dustin Caelan</h1>
                 <h2>Barista at coffeebean</h2>
 
@@ -144,7 +168,14 @@
 
             <div class="conteiner_member3">
 
-                <div class="picture_member3"></div>
+                <div class="picture_member3" onmouseover="hover3()" onmouseout="exit3()">
+                    <div class="conteiner_icons_members" id="c3">
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-x-line"></i>
+                        <i class="ri-dribbble-line"></i>
+                        <i class="ri-mail-line"></i>
+                    </div>
+                </div>
                 <h1>Rosana Pattie</h1>
                 <h2>Barista at coffeebean</h2>
 
@@ -152,7 +183,15 @@
 
             <div class="conteiner_member4">
 
-                <div class="picture_member4"></div>
+                <div class="picture_member4" onmouseover="hover4()"
+                onmouseout="exit4()">
+                    <div class="conteiner_icons_members" id="c4">
+                        <i class="ri-instagram-line"></i>
+                        <i class="ri-twitter-x-line"></i>
+                        <i class="ri-dribbble-line"></i>
+                        <i class="ri-mail-line"></i>
+                    </div>
+                </div>
                 <h1>Arthur Alpha</h1>
                 <h2>Barista at coffeebean</h2>
 

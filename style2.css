@@ -38,7 +38,6 @@ header{
     height: 15vh;
     background-color: transparent;
     font-size: 1rem;
-    gap: 20px;
 }
 
 /* img */
@@ -151,6 +150,35 @@ header{
 
 /* --header-- */
 
+.button_the_top{
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    background-color: #c39478;
+    color: white;
+    border: none; 
+    border-radius: 50%; 
+    width: 50px;
+    height: 50px;
+    text-align: center; 
+    line-height: 50px; 
+    font-size: 18px; 
+    cursor: pointer; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
+    display: none;
+    z-index: 1000;
+}
+
+.button_the_top.show{
+    display: block;
+}
+
+.button_the_top:hover{
+    background-color: #845f4f;
+    color: #c39478;
+    transition: all .5s ease;
+}
+
 /* about */
 
 .about_pag2{
@@ -261,6 +289,33 @@ header{
 
 .conteiner_about2_pag2 p{
     padding: 0px 20px 20px 20px;    
+}
+
+.about2_pag2 .conteiner_button_discover_more{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    padding: 0px 0px 20px 0px;
+}
+
+.about2_pag2 .conteiner_button_discover_more .button_discover_more{
+    background-color: #9e6d57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    padding: 20px 0px 0px 0px;
+    border-radius: 20px;
+}
+
+.about2_pag2 .conteiner_button_discover_more .button_discover_more:hover{
+    background-color: #513b32;
+    color: #c39478;
+    transition: all .5s ease;
 }
 
 /* -about2-- */
@@ -429,10 +484,45 @@ header{
 .group_about_pag2 .conteiner_member3 .picture_member3,
 .group_about_pag2 .conteiner_member4 .picture_member4{
     width: 100%;
-    height: 25vh;
+    height: 40vh;
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.group_about_pag2 .conteiner_member1 .picture_member1:hover,
+.group_about_pag2 .conteiner_member2 .picture_member2:hover,
+.group_about_pag2 .conteiner_member3 .picture_member3:hover,
+.group_about_pag2 .conteiner_member4 .picture_member4:hover{
+    transition: all .5s ease;
+    filter: sepia(500%) hue-rotate(-24deg) saturate(400%) brightness(0.9) grayscale(48%);
+}
+
+.group_about_pag2 .conteiner_member1 .picture_member1,
+.group_about_pag2 .conteiner_member2 .picture_member2,
+.group_about_pag2 .conteiner_member3 .picture_member3,
+.group_about_pag2 .conteiner_member4 .picture_member4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    font-size: 2rem;
+    flex-flow: column nowrap;
+    color: #9c6c56;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+}
+
+.conteiner_icons_members{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 20px;
+}
+
+.conteiner_icons_members i:hover{
+    color: #372922;
+    transition: color .5s ease;
 }
 
 .group_about_pag2 .conteiner_member1 .picture_member1{

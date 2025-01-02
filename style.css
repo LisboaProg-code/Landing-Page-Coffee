@@ -79,6 +79,10 @@ header{
     transition: color .3s ease;
 }
 
+#atual{
+    color: #A67F67;
+}
+
 /* --menu-- */
 
 /* search, button and darkmode */
@@ -360,15 +364,15 @@ header{
 }
 
 .sobre .imagens #img1{
-    background-image: url(imgs/cafe1.jpg);
+    background-image: url(imgs/cafe1-pq.jpg);
 }
 
 .sobre .imagens #img2{
-    background-image: url(imgs/cafe3.jpg);
+    background-image: url(imgs/cafe3-pq.jpg);
 }
 
 .sobre .imagens #img3{
-    background-image: url(imgs/cafe5.jpg);
+    background-image: url(imgs/cafe5-pq.jpg);
 }
 
 #img1:hover, #img2:hover, #img3:hover{
@@ -433,16 +437,16 @@ header{
 }
 
 #p1{
-    background-image: url(imgs/Cafe-grao.jpg);
+    background-image: url(imgs/Cafe-grao-pq.jpg);
 }
 
 #p2{
-    background-image: url(imgs/header3.jpg);
+    background-image: url(imgs/header3-pq.jpg);
 }
 
 #p3{
-    background-image: url(imgs/header5.jpg);
-}
+    background-image: url(imgs/header5-pq.jpg);
+}-pq
 
 .conteiner_our_products h1{
     font-size: 1.7rem; 
@@ -588,32 +592,32 @@ header{
 }
 
 #g1{
-    background-image: url(imgs/cafe7.jpg);
+    background-image: url(imgs/cafe7-pq.jpg);
 }
 
 #g2{
-    background-image: url(imgs/cafe1.jpg);
+    background-image: url(imgs/cafe1-pq.jpg);
 }
 #g3{
-    background-image: url(imgs/cafe6.jpg);
+    background-image: url(imgs/cafe6-pq.jpg);
 }
 
 #g4{
-    background-image: url(imgs/cafe8.jpg);
+    background-image: url(imgs/cafe8-pq.jpg);
 }
 
 #g5{
-    background-image: url(imgs/cafe9.jpg);
+    background-image: url(imgs/cafe9-pq.jpg);
 }
 
 #g6{
-    background-image: url(imgs/cafe10.jpg);
+    background-image: url(imgs/cafe10-pq.jpg);
 }
 #g7{
-    background-image: url(imgs/cafe11.jpg);
+    background-image: url(imgs/cafe11-pq.jpg);
 }
 #g8{
-    background-image: url(imgs/cafe12.jpg);
+    background-image: url(imgs/cafe12-pq.jpg);
 }
 
 /* --Gallery-- */
@@ -755,11 +759,11 @@ header{
 }
 
 #b1{
-    background-image: url(imgs/cafe14.jpg);
+    background-image: url(imgs/cafe14-pq.jpg);
 }
 
 #b2{
-    background-image: url(imgs/header3.jpg);
+    background-image: url(imgs/header3-pq.jpg);
 }
 
 .conteiner_post_blog h1{
