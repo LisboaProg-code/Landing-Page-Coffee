@@ -26,6 +26,10 @@
         position: relative;
     }
 
+    .grid_layout_header{
+        height: 100%;
+    }
+
     /* img */
 
     .conteiner_logo_pag2{
@@ -40,6 +44,7 @@
     .contiener_text_pag2_header{
         grid-column: 2;
         grid-row: 2;
+        transform: translateY(-50%);
     }
 
     /* menu */
@@ -49,8 +54,9 @@
         grid-row: 3;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
+        align-items: flex-end;
         padding-left: 15px;
+        transform: translateY(700%);
     }
 
     /* --menu-- */
@@ -63,7 +69,7 @@
         position: absolute;
         top: 28%;
         left: 80%;
-        transform: translate(-106%, -100%);
+        transform: translate(-106%, -140%);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -230,51 +236,85 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
+      /* header */
     header{
-        height: 35vh;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        height: 45vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows: 3;
+        position: relative;
     }
+
+    .grid_layout_header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* img */
 
     .conteiner_logo_pag2{
-        width: 80px;
-        font-size: 1.5rem;
+        grid-column: 1;
+        grid-row: 1;
+        width: 70px;
         align-self: flex-start;
-    }
-
-    .menu_pag2{
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 30px;
-        transform: translateX(-15%);
-        font-size: 1rem;
-        padding: 20px 0px 0px 0px;
-    }
-
-    header .centralizacao_txt_header{
-        width: 100%;
         
     }
 
-    .conteiner_search_button_dark_header_pag2{
-        gap: 20px;
+    /* --img-- */
+
+    .contiener_text_pag2_header{
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 1.5rem;
+        align-items: center;
+        transform: translateY(-20%);
+    }
+
+    /* menu */
+
+    .menu_pag2{
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 100px;
         align-self: flex-start;
-        padding: 20px 0px 0px 0px;
+        transform: translate(0%, 120%);
+    }
+
+    /* --menu-- */
+
+    /* search, button and darkmode */
+
+    .conteiner_search_button_dark_header_pag2{
+        grid-column: 2;
+        grid-row: 1;
+        position: absolute;
+        top: 28%;
+        left: 80%;
+        transform: translate(-106%, -180%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
     }
 
     .conteiner_search_button_dark_header_pag2 .button_buy{
-        width: 17vw;
+        width: 140px;
         height: 40px;
-        align-content: center;
     }
 
-    .conteiner_search_button_dark_header_pag2 .ri-moon-line, .conteiner_search_button_dark_header_pag2 .ri-search-line{
-        transform: translateY(20%);
-        font-size: 1.3rem;
+    .button_buy p{
+        transform: translateY(50%);
     }
+
+    .ri-search-line, .ri-moon-line{
+        font-size: 25px;
+    }
+
+    /* --search, button and darkmode-- */
+
+    /* --header-- */
+    
 }
