@@ -14,3 +14,7 @@ me lembrem de nunca mais pegar uma landing page de mais de 1 pagina pelo amor de
 -----------------------------------------------------
 
 ver bibliotecas de animação como o scrollreveal e o gsap
+
+-----------------------------------------------------
+
+20, 24, 28, 34, 25, 22

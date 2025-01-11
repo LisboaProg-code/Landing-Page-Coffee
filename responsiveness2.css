@@ -12,14 +12,19 @@
     .apresentação .conteiner_marca_pag{
         transform: translate(-60px, -90px);
     }
+
+    .conteiner_search_button_dark_header_pag2{
+        transform: translateX(-500%);
+    }
 }
 
 /* max 768px */
 
 @media screen and (max-width: 768px) {
+
     /* header */
     header{
-        height: 35vh;
+        height: 40vh;
         display: grid;
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 3;
@@ -85,7 +90,7 @@
     }
 
     .ri-search-line, .ri-moon-line{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     /* --search, button and darkmode-- */
@@ -461,6 +466,7 @@
 @media screen and (min-width: 1025px) and (max-width: 1439px) {
     
     header{
+        width: 100%;
         height: 40vh;
         display: grid;
         grid-template-columns: 1fr 2fr 3fr;
@@ -726,7 +732,7 @@
         grid-template-columns: 1fr 300px 2fr;
         justify-content: space-evenly;
         gap: 20px;
-        transform: translateX(5%);
+        transform: translateX(0%);
         height: 300px;
     }
 
@@ -740,13 +746,14 @@
         grid-column: 2;
         width: 100%;
         justify-content: center;
-        transform: translateX(10%);
+        transform: translateX(30%);
     }
 
     footer .msg_footer{
-        width: 100%;
+        width: 80%;
         grid-column: 3;
         justify-content: center;
+        transform: translateX(25%);
     }
 
     footer #pp{
@@ -1035,7 +1042,7 @@
         grid-template-columns: 1fr 300px 2fr;
         justify-content: space-evenly;
         gap: 20px;
-        transform: translateX(5%);
+        transform: translateX(0%);
         height: 300px;
     }
 
@@ -1049,13 +1056,14 @@
         grid-column: 2;
         width: 100%;
         justify-content: center;
-        transform: translateX(10%);
+        transform: translateX(50%);
     }
 
     footer .msg_footer{
-        width: 100%;
+        width: 80%;
         grid-column: 3;
         justify-content: center;
+        transform: translateX(25%);
     }
 
     footer #pp{

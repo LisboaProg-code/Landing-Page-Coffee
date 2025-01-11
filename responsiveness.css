@@ -775,8 +775,12 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
-        transform: translateX(10%);
+        transform: translateX(13%);
         font-size: 1rem;
+    }
+
+    .menu_items{
+        font-size: 1.3rem;
     }
 
     .conteiner_header_fim{

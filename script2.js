@@ -39,7 +39,7 @@ const btnTopo = document.getElementById('top');
 
     // Exibe o botão quando o usuário rolar 300px ou mais
     window.onscroll = function() {
-      if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
         btnTopo.classList.add('show');
       } else {
         btnTopo.classList.remove('show');
