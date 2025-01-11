@@ -933,6 +933,8 @@
     
     .our_products .conteiner_our_products h1{
         font-size: 1.7rem;
+        padding-top: 10px;
+        padding-left: 10px;
     }
 
     .our_products .conteiner_our_products p{
