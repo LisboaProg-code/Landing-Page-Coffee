@@ -18,3 +18,4 @@ ver bibliotecas de animação como o scrollreveal e o gsap
 -----------------------------------------------------
 
 20, 24, 28, 34, 25, 22
+vou ter que fazer quase do zero as coisas por conta de erros samerda
