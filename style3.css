@@ -210,11 +210,13 @@ header{
     height: 70vh;
     background-color: #f2f2f2;
     color: #2e211c;
+    padding: 0px 0px 50px 0px;
 }
 
 .img_coffe_our_coffe_pag3{
     background-image: url(imgs/cafe_medio_pag3.png);
     background-size: 130%;
+    background-repeat: no-repeat;
     background-position: 50% 85%;
     width: 100%;
     height: 50%;
@@ -237,6 +239,99 @@ header{
 
 .our_coffes_pag3 p{
     font-size: 1.1rem;
-    padding: 0px 0px 20px 0px;
-    text-align: center;
+    padding: 0px 40px 20px 40px;
+    text-align: justify;
+    width: 100%;
 }
+
+/* --menucoffee- */
+
+/* more_pag3 */
+
+.conteiner_more_pag3_coffee{
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px 0px;
+}
+
+.more_pag3{
+    width: 95%;
+    height: 100%;
+    background-color: white;
+    color: #2e211c;
+}
+
+.img_coffee_more_pag3{
+    width: 100%;
+    height: 50%;
+    background-image: url(imgs/cafe24-p4.png);
+    background-size: cover;
+    background-position: center center;
+}
+
+.texto_coffee_more_pag3 h1{
+    color: #002250;
+    font-size: 2rem;
+    padding: 10px 20px;
+}
+
+.texto_coffee_more_pag3 p{
+    font-size: 1.1rem;
+    padding: 10px 30px 20px 30px;
+    text-align: justify;
+    width: 100%;
+}
+
+.buttons_more_pag3{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.buttons_more_pag3 .button_contact_more_pag3{
+    background-color: #A67F67;
+    border-radius: 15px;
+    width: 200px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.buttons_more_pag3 .button_contact_more_pag3:hover{
+    background-color: #513b32;
+    color: #A67F67;
+    transition: all .5s ease;
+}
+
+.buttons_more_pag3 .button_contact_more_pag3 p{
+    transform: translate(13%, 10%);
+}
+
+.buttons_more_pag3 .button_watch_video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatex(5%);
+    padding: 0px 0px 20px 0px;
+}
+
+.buttons_more_pag3 .button_watch_video i{
+    font-size: 3rem;
+    transform: translateX(10%);
+}
+
+.buttons_more_pag3 .button_watch_video i:hover{
+    color: #c39478;
+    transition: all .2s ease;
+}
+
+.buttons_more_pag3 .button_watch_video p{
+    transform: translate(-10%, 10%);
+    font-size: 1.2rem;
+}
+
+/* --morecoffee-- */
+

@@ -36,6 +36,8 @@ function mudarconteudo(cafe) {
   switch (cafe) {
       case 1:
           imagem.style.backgroundImage = "url(imgs/cafe_medio_pag3.png)";
+          imagem.style.backgroundPosition = "50% 85%"
+          imagem.style.backgroundSize = "150%"
           titulo.textContent = "Espresso";
           subtitulo.textContent = "Short & intense - $19.50";
           fundomenu1.style.backgroundColor = "white";
@@ -47,6 +49,8 @@ function mudarconteudo(cafe) {
           break;
       case 2:
           imagem.style.backgroundImage = "url(imgs/cafe2_medio_pag3.png)";
+          imagem.style.backgroundPosition = "center"
+          imagem.style.backgroundSize = "100%"
           titulo.textContent = "Latte";
           subtitulo.textContent = "Creamy & smooth - $24.00";
           fundomenu1.style.backgroundColor = "#dfdfdf";
@@ -61,6 +65,8 @@ function mudarconteudo(cafe) {
           break;
       case 3:
           imagem.style.backgroundImage = "url(imgs/cafe3_medio_pag3.png)";
+          imagem.style.backgroundPosition = "50% 80%"
+          imagem.style.backgroundSize = "70%"
           titulo.textContent = "Cappuccino";
           subtitulo.textContent = "Rich & foamy - $22.50";
           fundomenu1.style.backgroundColor = "#dfdfdf";
@@ -75,6 +81,8 @@ function mudarconteudo(cafe) {
           break;
       case 4:
           imagem.style.backgroundImage = "url(imgs/cafe4_medio_pag3.png)";
+          imagem.style.backgroundPosition = "25% 55%"
+          imagem.style.backgroundSize = "110%"
           titulo.textContent = "Mocha";
           subtitulo.textContent = "Chocolate & coffee - $26.00";
           fundomenu1.style.backgroundColor = "#dfdfdf";
