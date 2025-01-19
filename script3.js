@@ -44,13 +44,6 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "31% 23% 23% 23%";
-          cafe1.style.backgroundPosition = "center 80%"
-          cafe3.style.backgroundSize = "170%"
-          if(mediaquery.matches){
-            /* imagem.style.backgroundPosition = "50% 80%"
-            imagem.style.backgroundSize = "100%"
-            cafe1.style.backgroundPosition = "48% -45%" */
-          }
           break;
       case 2:
           imagem.src = "imgs/imagem_cafe_definitivo_2.1.png";
@@ -61,13 +54,6 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "23% 31% 23% 23%";
-          cafe2.style.backgroundPosition = "70% 80%"
-          cafe3.style.backgroundSize = "170%"
-          if(mediaquery.matches){
-              /* cafe1.style.backgroundPosition = "50% -57%"
-              imagem.style.backgroundPosition = "center 50%"
-              imagem.style.backgroundSize = "70%" */
-          }
           break;
       case 3:
           imagem.src = "imgs/imagem_cafe_definitivo_3.1.png"
@@ -78,12 +64,6 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "white";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "23% 23% 31% 23%";
-          cafe3.style.backgroundPosition = "center 95%"
-          if(mediaquery.matches){
-            /* cafe1.style.backgroundPosition = "50% -57%"
-            imagem.style.backgroundPosition = "50% 80%"
-            imagem.style.backgroundSize = "50%" */
-        }
           break;
       case 4:
           imagem.src = "imgs/imagem_cafe_definitivo_4.1.png"
@@ -94,13 +74,6 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "white";
           menu.style.gridTemplateColumns = "23% 23% 23% 31%";
-          cafe3.style.backgroundSize = "170%"
-          cafe4.style.backgroundPosition = "100% 40%"
-          if(mediaquery.matches){
-            /* cafe1.style.backgroundPosition = "50% -57%"
-            imagem.style.backgroundSize = "70%"
-            imagem.style.backgroundPosition = "55% 60%" */
-        }
           break;
       default:
           imagem.style.backgroundImage = "url(imgs/cafe3_medio_pag3.png)";
@@ -112,13 +85,6 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "31% 23% 23% 23%";
-          cafe1.style.backgroundPosition = "center 80%"
-          cafe3.style.backgroundSize = "170%"
-          if(mediaquery.matches){
-            /* imagem.style.backgroundPosition = "50% -45%"
-            imagem.style.backgroundSize = "110%"
-            cafe1.style.backgroundPosition = "center" */
-          }
   }
 
 }
