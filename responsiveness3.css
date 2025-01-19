@@ -8,11 +8,17 @@
     .conteiner_search_button_dark_header_pag3{
         transform: translatey(-200%);
     }
+
+    .our_coffes_pag3 p{
+        width: 95%;
+    }
+
+    
 }
 
 /* max 768px */
 
-@media screen and (min-width:457px) and (max-width: 768px) {
+@media screen and (min-width:300px) and (max-width: 768px) {
 
     /* header */
     header{
@@ -90,5 +96,101 @@
     /* --search, button and darkmode-- */
 
     /* --header-- */
+
+}
+
+@media screen and (min-width: 769px) {
+    header{
+        height: 45vh;
+        display: grid;
+        grid-template-columns: 1fr 2fr 3fr;
+        grid-template-rows: 3;
+        position: relative;
+    }
+
+    .grid_layout_header_pag3{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    /* img */
+
+    .conteiner_logo_pag3{
+        grid-column: 1;
+        grid-row: 1;
+        width: 70px;
+        align-self: flex-start;
+        
+    }
+
+    /* --img-- */
+
+    .contiener_text_pag3_header{
+        grid-column: 2;
+        grid-row: 2;
+        font-size: 1.5rem;
+        align-items: center;
+        transform: translateY(-20%);
+    }
+
+    /* menu */
+
+    .menu_pag3{
+        grid-column: 2;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 100px;
+        align-self: flex-start;
+        transform: translate(0%, 120%);
+    }
+
+    /* --menu-- */
+
+    /* search, button and darkmode */
+
+    .conteiner_search_button_dark_header_pag3{
+        grid-column: 2;
+        grid-row: 1;
+        position: absolute;
+        top: 28%;
+        left: 80%;
+        transform: translate(-106%, -180%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: flex-start;
+    }
+
+    .conteiner_search_button_dark_header_pag3 .button_buy{
+        width: 140px;
+        height: 40px;
+    }
+
+    .button_buy p{
+        transform: translateY(50%);
+    }
+
+    .ri-search-line, .ri-moon-line{
+        font-size: 25px;
+    }
+
+    /* --search, button and darkmode-- */
+
+    /* --header-- */
+
+    .our_coffes_pag3{
+        justify-content: center;
+    }
+
+    .coffes_pag3{
+        width: 95%;
+        display: flex;
+    }
+
+    .our_coffes_texto{
+        align-self: center;
+    }
 
 }

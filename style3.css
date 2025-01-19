@@ -161,7 +161,7 @@ header{
 }
 
 .menu_cafe{
-    min-width: 450px;
+    min-width: 350px;
     max-width: 500px;
     height: 100px;
     display: grid;
