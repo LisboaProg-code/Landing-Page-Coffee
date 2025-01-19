@@ -32,12 +32,11 @@ function mudarconteudo(cafe) {
   let cafe2 = document.getElementById("cafe2menu");
   let cafe3 = document.getElementById("cafe3menu");
   let cafe4 = document.getElementById("cafe4menu");
+  const mediaquery = window.matchMedia("(min-width: 500px) and (max-width: 768px)")
 
   switch (cafe) {
       case 1:
-          imagem.style.backgroundImage = "url(imgs/cafe_medio_pag3.png)";
-          imagem.style.backgroundPosition = "50% 85%"
-          imagem.style.backgroundSize = "150%"
+          imagem.src = "imgs/imagem_cafe_definitivo_1.png"
           titulo.textContent = "Espresso";
           subtitulo.textContent = "Short & intense - $19.50";
           fundomenu1.style.backgroundColor = "white";
@@ -45,12 +44,16 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "31% 23% 23% 23%";
-          cafe1.style.backgroundPosition = "45% -45%"
+          cafe1.style.backgroundPosition = "center 80%"
+          cafe3.style.backgroundSize = "170%"
+          if(mediaquery.matches){
+            /* imagem.style.backgroundPosition = "50% 80%"
+            imagem.style.backgroundSize = "100%"
+            cafe1.style.backgroundPosition = "48% -45%" */
+          }
           break;
       case 2:
-          imagem.style.backgroundImage = "url(imgs/cafe2_medio_pag3.png)";
-          imagem.style.backgroundPosition = "center"
-          imagem.style.backgroundSize = "100%"
+          imagem.src = "imgs/imagem_cafe_definitivo_2.1.png";
           titulo.textContent = "Latte";
           subtitulo.textContent = "Creamy & smooth - $24.00";
           fundomenu1.style.backgroundColor = "#dfdfdf";
@@ -58,15 +61,16 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "23% 31% 23% 23%";
-          cafe1.style.backgroundSize = "250%"
-          cafe1.style.backgroundPosition = "50% -55%"
-          cafe2.style.backgroundSize = "160%"
-          cafe2.style.backgroundPosition = "50% 60%"
+          cafe2.style.backgroundPosition = "70% 80%"
+          cafe3.style.backgroundSize = "170%"
+          if(mediaquery.matches){
+              /* cafe1.style.backgroundPosition = "50% -57%"
+              imagem.style.backgroundPosition = "center 50%"
+              imagem.style.backgroundSize = "70%" */
+          }
           break;
       case 3:
-          imagem.style.backgroundImage = "url(imgs/cafe3_medio_pag3.png)";
-          imagem.style.backgroundPosition = "50% 80%"
-          imagem.style.backgroundSize = "70%"
+          imagem.src = "imgs/imagem_cafe_definitivo_3.1.png"
           titulo.textContent = "Cappuccino";
           subtitulo.textContent = "Rich & foamy - $22.50";
           fundomenu1.style.backgroundColor = "#dfdfdf";
@@ -74,15 +78,15 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "white";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "23% 23% 31% 23%";
-          cafe1.style.backgroundSize = "250%"
-          cafe1.style.backgroundPosition = "50% -55%"
-          cafe3.style.backgroundSize = "110%"
-          cafe3.style.backgroundPosition = "50% 80%"
+          cafe3.style.backgroundPosition = "center 95%"
+          if(mediaquery.matches){
+            /* cafe1.style.backgroundPosition = "50% -57%"
+            imagem.style.backgroundPosition = "50% 80%"
+            imagem.style.backgroundSize = "50%" */
+        }
           break;
       case 4:
-          imagem.style.backgroundImage = "url(imgs/cafe4_medio_pag3.png)";
-          imagem.style.backgroundPosition = "25% 55%"
-          imagem.style.backgroundSize = "110%"
+          imagem.src = "imgs/imagem_cafe_definitivo_4.1.png"
           titulo.textContent = "Mocha";
           subtitulo.textContent = "Chocolate & coffee - $26.00";
           fundomenu1.style.backgroundColor = "#dfdfdf";
@@ -90,13 +94,17 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "white";
           menu.style.gridTemplateColumns = "23% 23% 23% 31%";
-          cafe1.style.backgroundSize = "250%"
-          cafe1.style.backgroundPosition = "50% -55%"
-          cafe4.style.backgroundSize = "145%"
-          cafe4.style.backgroundPosition = "40% 57%"
+          cafe3.style.backgroundSize = "170%"
+          cafe4.style.backgroundPosition = "100% 40%"
+          if(mediaquery.matches){
+            /* cafe1.style.backgroundPosition = "50% -57%"
+            imagem.style.backgroundSize = "70%"
+            imagem.style.backgroundPosition = "55% 60%" */
+        }
           break;
       default:
-          imagem.style.backgroundImage = "url(imgs/cafe_medio_pag3.png)";
+          imagem.style.backgroundImage = "url(imgs/cafe3_medio_pag3.png)";
+          imagem.style.backgroundSize = "50%"
           titulo.textContent = "Espresso";
           subtitulo.textContent = "Short & Intense - $19.50";
           fundomenu1.style.backgroundColor = "white";
@@ -104,7 +112,13 @@ function mudarconteudo(cafe) {
           fundomenu3.style.backgroundColor = "#dfdfdf";
           fundomenu4.style.backgroundColor = "#dfdfdf";
           menu.style.gridTemplateColumns = "31% 23% 23% 23%";
-          cafe1.style.backgroundPosition = "45% -850%"
+          cafe1.style.backgroundPosition = "center 80%"
+          cafe3.style.backgroundSize = "170%"
+          if(mediaquery.matches){
+            /* imagem.style.backgroundPosition = "50% -45%"
+            imagem.style.backgroundSize = "110%"
+            cafe1.style.backgroundPosition = "center" */
+          }
   }
 
 }

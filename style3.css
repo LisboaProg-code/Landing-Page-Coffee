@@ -153,7 +153,7 @@ header{
 /* article1 */
 
 .our_coffes_pag3{
-    height: 80vh;
+    height: 100%;
     width: 100%;
     display: flex;
     align-items: center;
@@ -161,14 +161,24 @@ header{
 }
 
 .menu_cafe{
-    height: 10vh;
-    width: 90%;
+    min-width: 450px;
+    max-width: 500px;
+    height: 100px;
     display: grid;
     grid-template-columns: 31% 23% 23% 23%;
+    flex-grow: 1;
+    flex-shrink: 1;
 }
 
 .fundo_menu_item_cafe1, .fundo_menu_item_cafe2, .fundo_menu_item_cafe3, .fundo_menu_item_cafe4{
     background-color: white;
+    max-width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* overflow: hidden; */
+    transition: all .5s ease;
 } 
 
 .fundo_menu_item_cafe2, .fundo_menu_item_cafe3, .fundo_menu_item_cafe4{
@@ -176,50 +186,55 @@ header{
 }
 
 .cafe1, .cafe2, .cafe3, .cafe4{
-    height: 100%;
-    width: 100%;
-    cursor: pointer;  
+    max-height: 100%;
+    max-width: 100%;
+    cursor: pointer;
+    object-fit: cover;  
 }
 
 .cafe1{
-    background-image: url(imgs/cafe_pag3.png);
-    background-size: 200%;
-    background-position: 45% -50%;
+    transform: translateY(-20%);
 }
 
 .cafe2{
-    background-image: url(imgs/cafe2_pag3.png);
-    background-size: 170%;
-    background-position: 50% 70%;
+    transform: translateY(-20%);
 }
 
 .cafe3{
-    background-image: url(imgs/cafe3_pag3.png);
-    background-size: 120%;
-    background-position: 50% 80%;
+    transform: translate(5%, -10%);
 }
 
 .cafe4{
-    background-image: url(imgs/cafe4_pag3.png);
-    background-size: 170%;
-    background-position: 40% 60%;
+    transform: translate(-5% ,5%);
 }
 
 .coffes_pag3{
     width: 100%;
-    height: 70vh;
+    height: 100%;
     background-color: #f2f2f2;
     color: #2e211c;
     padding: 0px 0px 50px 0px;
+    overflow: hidden;
+}
+
+.conteiner_conteiner_img_coffee_pag3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner_img_coffes_pag3{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
 }
 
 .img_coffe_our_coffe_pag3{
-    background-image: url(imgs/cafe_medio_pag3.png);
-    background-size: 130%;
-    background-repeat: no-repeat;
-    background-position: 50% 85%;
-    width: 100%;
-    height: 50%;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 
@@ -227,7 +242,7 @@ header{
     font-size: 2rem;
     color: #002250;
     text-align: center;
-    padding: 10px 0px;
+    padding: 0px 0px 10px 0px;
 }
 
 .our_coffes_pag3 h2{
@@ -237,11 +252,19 @@ header{
 
 }
 
+.conteiner_texto_our_coffes{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
 .our_coffes_pag3 p{
     font-size: 1.1rem;
     padding: 0px 40px 20px 40px;
     text-align: justify;
-    width: 100%;
+    width: 80%;
 }
 
 /* --menucoffee- */
@@ -250,7 +273,7 @@ header{
 
 .conteiner_more_pag3_coffee{
     width: 100%;
-    height: 120vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -262,20 +285,13 @@ header{
     height: 100%;
     background-color: white;
     color: #2e211c;
-}
-
-.img_coffee_more_pag3{
-    width: 100%;
-    height: 50%;
-    background-image: url(imgs/cafe24-p4.png);
-    background-size: cover;
-    background-position: center center;
+    padding: 25px 0px;
 }
 
 .texto_coffee_more_pag3 h1{
     color: #002250;
-    font-size: 2rem;
-    padding: 10px 20px;
+    font-size: 2.5rem;
+    padding: 0px 0px 10px 25px;
 }
 
 .texto_coffee_more_pag3 p{
@@ -339,7 +355,7 @@ header{
 
 .conteiner_more2_pag3_coffee{
     width: 100%;
-    height: 110vh;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -350,14 +366,8 @@ header{
     width: 95%;
     height: 100%;
     background-color: white;
-    color: #2e211c;   
-}
-
-.img_more2_pag3_coffee{
-    width: 100%;
-    height: 50%;
-    background-image: url(imgs/cafe28-p4.png);
-    background-position: 5% 70%;
+    color: #2e211c;  
+    padding: 0px 0px 20px 0px; 
 }
 
 .texto_coffee_more2_pag3{
@@ -366,7 +376,8 @@ header{
 
 .texto_coffee_more2_pag3 h1{
     color: #002250;
-    font-size: 1.8rem;
+    font-size: 2.2rem;
+    padding: 0px 0px 10px 10px;
 }
 
 .texto_coffee_more2_pag3 p{
