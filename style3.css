@@ -161,8 +161,8 @@ header{
 }
 
 .menu_cafe{
-    min-width: 350px;
-    max-width: 500px;
+    min-width: 400px;
+    max-width: 600px;
     height: 100px;
     display: grid;
     grid-template-columns: 31% 23% 23% 23%;
@@ -222,6 +222,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .conteiner_img_coffes_pag3{
@@ -241,7 +242,6 @@ header{
 .our_coffes_pag3 h1{
     font-size: 2rem;
     color: #002250;
-    text-align: center;
     padding: 0px 0px 10px 0px;
 }
 
@@ -258,13 +258,39 @@ header{
     flex-flow: column nowrap;
     justify-content: center;
     align-items: center;
+    flex: 1;
 }
 
 .our_coffes_pag3 p{
     font-size: 1.1rem;
-    padding: 0px 40px 20px 40px;
+    padding: 0px 40px 30px 40px;
     text-align: justify;
     width: 80%;
+}
+
+.button_buy_now_coffes{
+    color: #2e211c;
+    width: 200px;
+    height: 50px;
+    background-color: #9e6d57;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_buy_now_coffes p{
+    text-align: center;
+    transform: translateY(25%);
+}
+
+.button_buy_now_coffes:hover{
+    background-color: #513b32;
+    color: #c39478;
+    transition: background-color .5s ease, color .3s ease;
 }
 
 /* --menucoffee- */
@@ -339,7 +365,7 @@ header{
     transform: translateX(10%);
 }
 
-.buttons_more_pag3 .button_watch_video i:hover{
+.buttons_more_pag3 .button_watch_video:hover{
     color: #c39478;
     transition: all .2s ease;
 }
@@ -355,7 +381,7 @@ header{
 
 .conteiner_more2_pag3_coffee{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;

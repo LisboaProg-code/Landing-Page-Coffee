@@ -32,7 +32,6 @@ function mudarconteudo(cafe) {
   let cafe2 = document.getElementById("cafe2menu");
   let cafe3 = document.getElementById("cafe3menu");
   let cafe4 = document.getElementById("cafe4menu");
-  const mediaquery = window.matchMedia("(min-width: 500px) and (max-width: 768px)")
 
   switch (cafe) {
       case 1:
@@ -88,3 +87,27 @@ function mudarconteudo(cafe) {
   }
 
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+  let imagemfinal = document.getElementById("imagemfinal");
+
+  const mediaquery = window.matchMedia("(max-width: 768px)");
+
+  // Função para atualizar a imagem com base no tamanho da tela
+  function atualizarImagem(e) {
+    if (e.matches) {
+      // Largura menor ou igual a 768px
+      imagemfinal.src = "imgs/cafe28_pag3.png";
+    } else {
+      // Largura maior que 768px
+      imagemfinal.src = "imgs/cafe9-pq.jpg";
+    }
+  }
+
+  // Verifica a condição inicial
+  atualizarImagem(mediaquery);
+
+  // Adiciona um listener para mudanças na largura da tela
+  mediaquery.addEventListener("change", atualizarImagem);
+});
+
