@@ -89,25 +89,22 @@ function mudarconteudo(cafe) {
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  let imagemfinal = document.getElementById("imagemfinal");
+  let imagemultimo = document.getElementById("imagemfinal");
 
-  const mediaquery = window.matchMedia("(max-width: 768px)");
+  const mediaquery = window.matchMedia("(max-width: 1024px)");
 
-  // Função para atualizar a imagem com base no tamanho da tela
   function atualizarImagem(e) {
     if (e.matches) {
       // Largura menor ou igual a 768px
-      imagemfinal.src = "imgs/cafe28_pag3.png";
+      imagemultimo.src = "imgs/cafe28_pag3.png";
     } else {
       // Largura maior que 768px
-      imagemfinal.src = "imgs/cafe9-pq.jpg";
+      imagemultimo.src = "imgs/cafe9-pq.jpg";
     }
   }
 
-  // Verifica a condição inicial
   atualizarImagem(mediaquery);
 
-  // Adiciona um listener para mudanças na largura da tela
   mediaquery.addEventListener("change", atualizarImagem);
 });
 

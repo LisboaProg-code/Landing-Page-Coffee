@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 456px) {
+    .conteiner_texto p{
+        top: 35vh;   
+    }
+
+    .conteiner_search_button_dark_header_pag4{
+        transform: translatey(-200%);
+    }
+
+    .our_coffes_pag4 p{
+        width: 100%;
+    }
+
+    
+}
+
+/* max 768px */
+
+@media screen and (min-width:300px) and (max-width: 768px) {
+
+    /* header */
+    header{
+        height: 37vh;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 3;
+        position: relative;
+    }
+
+    .grid_layout_header_pag4{
+        height: 166%;
+    }
+
+    /* img */
+
+    .conteiner_logo_pag4{
+        grid-column: 1;
+        grid-row: 1;
+        width: 70px;
+        
+    }
+
+    /* --img-- */
+
+    .contiener_text_pag4_header{
+        grid-column: 2;
+        grid-row: 2;
+        transform: translateY(-50%);
+    }
+
+    /* menu */
+
+    .menu_pag4{
+        grid-column: 1;
+        grid-row: 3;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 15px;
+        transform: translateY(750%);
+        z-index: 10;
+        position: relative;
+    }
+
+    /* --menu-- */
+
+    /* search, button and darkmode */
+
+    .conteiner_search_button_dark_header_pag4{
+        grid-column: 2;
+        grid-row: 1;
+        position: absolute;
+        top: 28%;
+        left: 80%;
+        transform: translate(-100%, -140%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .conteiner_search_button_dark_header_pag4 .button_buy{
+        width: 140px;
+        height: 40px;
+    }
+
+    .conteiner_search_button_dark_header_pag4 .button_buy p{
+        transform: translateY(50%);
+    }
+
+    .ri-search-line, .ri-moon-line{
+        font-size: 20px;
+    }
+
+    /* --search, button and darkmode-- */
+
+    /* --header-- */
+
+}
