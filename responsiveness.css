@@ -28,6 +28,33 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .imagens{
+        height: 100%;
+    }
+
+    #img1, #img2, #img3{
+        height: 100%;
+        width: 80%;
+    }
+
+    .conteiner_gallery_img{
+        transform: translateY(-4%);
+    }
+
+    .img_gallery{
+        width: 90%;
+    }
+
+    .gallery .conteiner_gallery_img{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+}
+
 /* max 768px */
 
 @media screen and (max-width: 768px) {
@@ -95,8 +122,51 @@
 
     /* --header-- */
 
-    
+    .imagens{
+        height: 100%;
+    }
 
+    #img1, #img2, #img3{
+        height: auto;
+        width: 60%;
+        max-width: 300px;
+    }
+
+    .conteiner_gallery_img{
+        transform: translateY(-3%);
+    }
+
+    .gallery .conteiner_gallery_img{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .conteiner_post_blog{
+        max-width: 450px;
+    }
+
+    .our_products .conteiner_our_products{
+        max-width: 350px;
+    }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .sobre .imagens{
+        flex-flow: row nowrap;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    #img1, #img2, #img3{
+        height: auto;
+        width: 150px;
+        max-width: 200px;
+        flex: 1;
+    }
 }
 
 
@@ -187,7 +257,7 @@
     }
 
     .apresentação .button_next{
-        transform: translate(6vw, -145px);
+        transform: translate(4vw, -145px);
     }
 
     .apresentação .conteiner_marca_pag{
@@ -219,9 +289,9 @@
         gap: 20px;
     }
     
-    .imagens{
-        display: grid;
-        width: 100%;
+    .sobre .imagens{
+        width: 96%;
+        height: 100%;
         padding-right: 50px;
     }
 
@@ -231,9 +301,11 @@
     }
 
     #img1, #img2, #img3{
-        width: 40vw; /* 40vw 40vh */
-        height: 40vh;
+        width: 130px;
+        max-width: 300px;
+        height: auto;
         background-position: center;
+        flex:1;
     }
 
     /* --Sobre-- */
@@ -489,7 +561,7 @@
 
     .sobre{
         display: grid;
-        grid-template-columns: 25vw 75vw;
+        grid-template-columns: 32vw 66vw;
     }
 
     .sobre .conteiner_text_sobre{
@@ -499,7 +571,7 @@
 
     .sobre .conteiner_text_sobre h2{
         width: 100%;
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .sobre .conteiner_text_sobre p{
@@ -524,9 +596,11 @@
     }
 
     #img1, #img2, #img3{
-        width: 45dvw; /* 40vw 40vh */
-        height: 60dvh;
+        width: 200px;
+        max-width: 300px;
+        height: auto;
         background-position: center;
+        flex: 1;
     }
 
     /* --Sobre-- */
@@ -720,7 +794,6 @@
         grid-template-columns: 1fr 300px 2fr;
         justify-content: space-evenly;
         gap: 20px;
-        transform: translateX(5%);
         height: 300px;
     }
 
@@ -738,7 +811,7 @@
     }
 
     footer .msg_footer{
-        width: 100%;
+        width: 90%;
         grid-column: 3;
         justify-content: center;
     }
@@ -854,7 +927,7 @@
 
     .sobre{
         display: grid;
-        grid-template-columns: 25vw 75vw;
+        grid-template-columns: 32vw 66vw;
     }
 
     .sobre .conteiner_text_sobre{
@@ -1031,12 +1104,17 @@
     }
 
     .feedback .conteiner_buttons{
-        transform: translate(20%, -50%);
+        background-color: aqua;
     }
 
     .feedback .conteiner_buttons .button_next{
         transform: translateY(-300%);
-        left: 58%;
+        left: 75%;
+    }
+
+    .feedback .conteiner_buttons .button_previous{
+        position: absolute;
+        left: 23%;
     }
 
     /* --feedback-- */
@@ -1092,7 +1170,6 @@
         grid-template-columns: 1fr 300px 2fr;
         justify-content: space-evenly;
         gap: 20px;
-        transform: translateX(5%);
         height: 300px;
     }
 
@@ -1110,7 +1187,7 @@
     }
 
     footer .msg_footer{
-        width: 100%;
+        width: 90%;
         grid-column: 3;
         justify-content: center;
     }
