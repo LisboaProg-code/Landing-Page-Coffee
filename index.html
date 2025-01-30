@@ -15,6 +15,8 @@
 
     <script src="https://unpkg.com/scrollreveal"></script>
 
+    <script src="darkmode.js" defer></script>
+
 </head>
 <body>
     
@@ -38,7 +40,7 @@
                 <div class="button_buy">
                     <p>Buy Now</p>
                 </div>
-                <i class="ri-moon-line"></i>
+                <i class="ri-moon-line" id="dark" onclick="mode()"></i>
             </div>
     
         </header>
@@ -68,9 +70,9 @@
 
     <div class="button_the_top" id="top"><i class="ri-arrow-up-s-line"></i></div>
 
-    <article class="sobre">
+    <article class="sobre" id="sobre">
 
-        <div class="conteiner_text_sobre">
+        <div class="conteiner_text_sobre" id="texto_sobre">
             <h1>BEST FOR YOU</h1>
             <h2>Who we are.</h2>
             <p>We make the delicious coffee for the coffee lovers. We are a team of dedicated coffee fans who celebrate exceptional coffee brands and roasters.</p>
