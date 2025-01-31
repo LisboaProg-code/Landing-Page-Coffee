@@ -16,6 +16,19 @@ const btnTopo = document.getElementById('top');
 
 /* --botao-- */
 
+let darkmode = document.getElementById("dark")
+
+let dark = false
+
+function mode(){
+    
+    const light = document.getElementById("colortheme")
+
+    dark = !dark
+    light.href = dark ? "darkmode3.css" : "style3.css"; // Trocar o arquivo CSS
+    
+}
+
 /* menu cafe*/
 
 
@@ -38,40 +51,77 @@ function mudarconteudo(cafe) {
           imagem.src = "imgs/imagem_cafe_definitivo_1.png"
           titulo.textContent = "Espresso";
           subtitulo.textContent = "Short & intense - $19.50";
-          fundomenu1.style.backgroundColor = "white";
-          fundomenu2.style.backgroundColor = "#dfdfdf";
-          fundomenu3.style.backgroundColor = "#dfdfdf";
-          fundomenu4.style.backgroundColor = "#dfdfdf";
+
+          if (dark == false){
+            fundomenu1.style.backgroundColor = "white";
+            fundomenu2.style.backgroundColor = "#dfdfdf";
+            fundomenu3.style.backgroundColor = "#dfdfdf";
+            fundomenu4.style.backgroundColor = "#dfdfdf";  
+          }
+
+          else{
+            fundomenu1.style.backgroundColor = "#372922";
+            fundomenu2.style.backgroundColor = "#231a16";
+            fundomenu3.style.backgroundColor = "#231a16";
+            fundomenu4.style.backgroundColor = "#231a16";
+          }
           menu.style.gridTemplateColumns = "31% 23% 23% 23%";
           break;
       case 2:
           imagem.src = "imgs/imagem_cafe_definitivo_2.1.png";
           titulo.textContent = "Latte";
           subtitulo.textContent = "Creamy & smooth - $24.00";
-          fundomenu1.style.backgroundColor = "#dfdfdf";
-          fundomenu2.style.backgroundColor = "white";
-          fundomenu3.style.backgroundColor = "#dfdfdf";
-          fundomenu4.style.backgroundColor = "#dfdfdf";
+          if (dark == false){
+            fundomenu1.style.backgroundColor = "#dfdfdf";
+            fundomenu2.style.backgroundColor = "white";
+            fundomenu3.style.backgroundColor = "#dfdfdf";
+            fundomenu4.style.backgroundColor = "#dfdfdf";  
+          }
+
+          else{
+            fundomenu1.style.backgroundColor = "#231a16";
+            fundomenu2.style.backgroundColor = "#372922";
+            fundomenu3.style.backgroundColor = "#231a16";
+            fundomenu4.style.backgroundColor = "#231a16";
+          }
           menu.style.gridTemplateColumns = "23% 31% 23% 23%";
           break;
       case 3:
           imagem.src = "imgs/imagem_cafe_definitivo_3.1.png"
           titulo.textContent = "Cappuccino";
           subtitulo.textContent = "Rich & foamy - $22.50";
-          fundomenu1.style.backgroundColor = "#dfdfdf";
-          fundomenu2.style.backgroundColor = "#dfdfdf";
-          fundomenu3.style.backgroundColor = "white";
-          fundomenu4.style.backgroundColor = "#dfdfdf";
+          if (dark == false){
+            fundomenu1.style.backgroundColor = "#dfdfdf";
+            fundomenu2.style.backgroundColor = "#dfdfdf";
+            fundomenu3.style.backgroundColor = "white";
+            fundomenu4.style.backgroundColor = "#dfdfdf";  
+          }
+
+          else{
+            fundomenu1.style.backgroundColor = "#231a16";
+            fundomenu2.style.backgroundColor = "#231a16";
+            fundomenu3.style.backgroundColor = "#372922";
+            fundomenu4.style.backgroundColor = "#231a16";
+          }
           menu.style.gridTemplateColumns = "23% 23% 31% 23%";
           break;
       case 4:
           imagem.src = "imgs/imagem_cafe_definitivo_4.1.png"
           titulo.textContent = "Mocha";
           subtitulo.textContent = "Chocolate & coffee - $26.00";
-          fundomenu1.style.backgroundColor = "#dfdfdf";
-          fundomenu2.style.backgroundColor = "#dfdfdf";
-          fundomenu3.style.backgroundColor = "#dfdfdf";
-          fundomenu4.style.backgroundColor = "white";
+          if (dark == false){
+            fundomenu1.style.backgroundColor = "#dfdfdf";
+            fundomenu2.style.backgroundColor = "#dfdfdf";
+            fundomenu3.style.backgroundColor = "#dfdfdf";
+            fundomenu4.style.backgroundColor = "white";  
+          }
+
+          else{
+            fundomenu1.style.backgroundColor = "#231a16";
+            fundomenu2.style.backgroundColor = "#231a16";
+            fundomenu3.style.backgroundColor = "#231a16";
+            fundomenu4.style.backgroundColor = "#372922";
+          }
           menu.style.gridTemplateColumns = "23% 23% 23% 31%";
           break;
       default:
@@ -79,10 +129,19 @@ function mudarconteudo(cafe) {
           imagem.style.backgroundSize = "50%"
           titulo.textContent = "Espresso";
           subtitulo.textContent = "Short & Intense - $19.50";
-          fundomenu1.style.backgroundColor = "white";
-          fundomenu2.style.backgroundColor = "#dfdfdf";
-          fundomenu3.style.backgroundColor = "#dfdfdf";
-          fundomenu4.style.backgroundColor = "#dfdfdf";
+          if (dark == false){
+            fundomenu1.style.backgroundColor = "white";
+            fundomenu2.style.backgroundColor = "#dfdfdf";
+            fundomenu3.style.backgroundColor = "#dfdfdf";
+            fundomenu4.style.backgroundColor = "#dfdfdf";  
+          }
+
+          else{
+            fundomenu1.style.backgroundColor = "#372922";
+            fundomenu2.style.backgroundColor = "#231a16";
+            fundomenu3.style.backgroundColor = "#231a16";
+            fundomenu4.style.backgroundColor = "#231a16";
+          }
           menu.style.gridTemplateColumns = "31% 23% 23% 23%";
   }
 
@@ -107,4 +166,3 @@ document.addEventListener("DOMContentLoaded", function () {
 
   mediaquery.addEventListener("change", atualizarImagem);
 });
-
